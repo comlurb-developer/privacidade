@@ -1,14 +1,13 @@
 {
   "name": "privacidade",
   "version": "0.0.0",
-  "scripts": {
+   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node server.js",
+    "build": "ng build --output-path=src/dist/roteiro",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "heroku-postbuild": "ng build",
-    "postinstall": "ng build --aot -prod"
+    "test": "echo verificando teste",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
