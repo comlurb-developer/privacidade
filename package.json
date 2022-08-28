@@ -7,7 +7,7 @@
     "build": "ng build --output-path=src/dist/roteiro",
     "watch": "ng build --watch --configuration development",
     "test": "echo verificando teste",
-    "heroku-postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build"
   },
   "private": true,
   "dependencies": {
