@@ -4,12 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "./node_modules/.bin/ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "heroku-postbuild": "ng build --configuration=production"
   },
-  
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.3.0",
