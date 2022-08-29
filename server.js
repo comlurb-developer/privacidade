@@ -9,6 +9,7 @@ app.use('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/src/index.html'));
 });
 const server = http.createServer(app);
-const port = 3000;
+var port = normalizePort(process.env.PORT || '3000');
+
 server.listen(port);
 console.debug('Server inicializado na porta ' + port);
